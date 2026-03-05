@@ -1,28 +1,84 @@
 body{
+
 font-family: Arial, Helvetica, sans-serif;
-background: linear-gradient(to bottom, orange, black, purple);
+
+/* Smooth gradient */
+background: linear-gradient(
+135deg,
+#1a0f00,
+#14001a
+);
+
 color:white;
 text-align:center;
 padding:40px;
+
 }
 
+/* Glass effect container */
 .container{
+
 max-width:700px;
 margin:auto;
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter: blur(12px);
+
+border:1px solid rgba(255,255,255,0.15);
+
+border-radius:20px;
+
+padding:30px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+
+}
+
+h1{
+margin-bottom:10px;
 }
 
 button{
+
 margin-top:20px;
-padding:10px 20px;
+
+padding:12px 25px;
+
 font-size:16px;
+
 border:none;
-border-radius:10px;
+
+border-radius:12px;
+
 cursor:pointer;
+
+background:linear-gradient(90deg,#ff8c00,#a020f0);
+
+color:white;
+
+font-weight:bold;
+
+transition:0.2s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+label{
+
+margin:6px;
+
+display:inline-block;
+
 }
 
 input{
-margin:5px;
+
+margin-right:4px;
+
 }
